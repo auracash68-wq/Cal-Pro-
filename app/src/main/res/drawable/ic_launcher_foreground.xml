@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Ambient Drop Cast Shadow for 3D depth and realism -->
+    <path
+        android:fillColor="@color/icon_shadow_cast"
+        android:pathData="M 33,27 h 44 a 8,8 0 0 1 8,8 v 44 a 8,8 0 0 1 -8,8 h -44 a 8,8 0 0 1 -8,-8 v -44 a 8,8 0 0 1 8,-8 z" />
+
+    <!-- 2. Premium Charcoal Rounded Square Base Chassis -->
+    <path
+        android:fillColor="@color/icon_chassis_bg"
+        android:pathData="M 32,24 h 44 a 8,8 0 0 1 8,8 v 44 a 8,8 0 0 1 -8,8 h -44 a 8,8 0 0 1 -8,-8 v -44 a 8,8 0 0 1 8,-8 z" />
+
+    <!-- 3. Specular Inner Border Highlight (Adds a subtle high-end glass bevel/sheen) -->
+    <path
+        android:strokeColor="#24FFFFFF"
+        android:strokeWidth="1.2"
+        android:pathData="M 32,24 h 44 a 8,8 0 0 1 8,8 v 44 a 8,8 0 0 1 -8,8 h -44 a 8,8 0 0 1 -8,-8 v -44 a 8,8 0 0 1 8,-8 z" />
+
+    <!-- ======================================================== -->
+    <!-- BUTTONS GRID CONFIGURATION (4 Keys: Minus, Plus, Multiply, Equals) -->
+    <!-- ======================================================== -->
+
+    <!-- KEY 1: TOP-LEFT (Minus key - Charcoal Premium Gray) -->
+    <path
+        android:fillColor="@color/icon_button_dark"
+        android:pathData="M 32,28 h 16 a 4,4 0 0 1 4,4 v 16 a 4,4 0 0 1 -4,4 h -16 a 4,4 0 0 1 -4,-4 v -16 a 4,4 0 0 1 4,-4 z" />
+    <!-- Minus Symbol inside -->
+    <path
+        android:strokeColor="@color/icon_symbol_white"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 36,40 h 8" />
+
+    <!-- KEY 2: TOP-RIGHT (Plus key - Modern Electric Blue) -->
+    <path
+        android:fillColor="@color/icon_button_blue"
+        android:pathData="M 60,28 h 16 a 4,4 0 0 1 4,4 v 16 a 4,4 0 0 1 -4,4 h -16 a 4,4 0 0 1 -4,-4 v -16 a 4,4 0 0 1 4,-4 z" />
+    <!-- Plus Symbol inside -->
+    <path
+        android:strokeColor="@color/icon_symbol_white"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 64,40 h 8 M 68,36 v 8" />
+
+    <!-- KEY 3: BOTTOM-LEFT (Multiply key - Charcoal Premium Gray) -->
+    <path
+        android:fillColor="@color/icon_button_dark"
+        android:pathData="M 32,56 h 16 a 4,4 0 0 1 4,4 v 16 a 4,4 0 0 1 -4,4 h -16 a 4,4 0 0 1 -4,-4 v -16 a 4,4 0 0 1 4,-4 z" />
+    <!-- Multiply Symbol inside -->
+    <path
+        android:strokeColor="@color/icon_symbol_white"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 36,64 L 44,72 M 44,64 L 36,72" />
+
+    <!-- KEY 4: BOTTOM-RIGHT (Equals key - Modern Electric Blue) -->
+    <path
+        android:fillColor="@color/icon_button_blue"
+        android:pathData="M 60,56 h 16 a 4,4 0 0 1 4,4 v 16 a 4,4 0 0 1 -4,4 h -16 a 4,4 0 0 1 -4,-4 v -16 a 4,4 0 0 1 4,-4 z" />
+    <!-- Equals Symbol inside -->
+    <path
+        android:strokeColor="@color/icon_symbol_white"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 64,66 h 8 M 64,70 h 8" />
+
+</vector>

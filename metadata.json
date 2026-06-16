@@ -1,0 +1,6 @@
+{
+  "name": "Cal Pro",
+  "description": "Premium Smart Utility Calculator by Aura Tools, featuring Standard, EMI, Age, GST, Unit Converter, and Currency Converter with a beautiful design, smart history, ads, and robust toolset.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
