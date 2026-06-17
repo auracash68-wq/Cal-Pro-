@@ -59,6 +59,26 @@ android {
     }
   }
 
+  gradle.taskGraph.whenReady {
+    val hasReleaseTask = allTasks.any { task ->
+      val taskName = task.name.lowercase()
+      (taskName.contains("release") || taskName.contains("bundle")) && !taskName.contains("test")
+    }
+    if (hasReleaseTask) {
+      val keyPropertiesFile = rootProject.file("key.properties")
+      if (!keyPropertiesFile.exists()) {
+        throw org.gradle.api.GradleException("Release keystore not found. Release build is not allowed.")
+      }
+      val properties = Properties()
+      keyPropertiesFile.inputStream().use { properties.load(it) }
+      val storeFilePath = properties.getProperty("storeFile") as String?
+      val storeFileObject = if (storeFilePath != null) rootProject.file(storeFilePath) else null
+      if (storeFileObject == null || !storeFileObject.exists()) {
+        throw org.gradle.api.GradleException("Release keystore not found. Release build is not allowed.")
+      }
+    }
+  }
+
   buildTypes {
     release {
       isCrunchPngs = false
